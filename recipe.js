@@ -2,7 +2,7 @@
 let recipes = [
   {
     title: "Veggie Salad",
-    image: "https://cdn.discordapp.com/attachments/1053757772782633010/1419012133995151510/image.jpg?ex=68d03588&is=68cee408&hm=fedbd6ae4568a31e23c51018e339ec79667d72829adda164f4a37cb88b90dafa&",
+    image: "veggie salad.jpg",
     description: "Fresh mixed vegetable salad.",
     ingredients: ["Lettuce", "Tomato", "Cucumber", "Carrot"],
     category: "breakfast", 
@@ -11,7 +11,7 @@ let recipes = [
   },
   {
     title: "Fruit Smoothie",
-    image: "https://cdn.discordapp.com/attachments/1053757772782633010/1419013254579228704/image.jpg?ex=68d03693&is=68cee513&hm=16ec6744286deab1011329ea7f120f7b1e7241e807f86ad078ceac17e2cbee66&",
+    image: "fruit smoothie.jpg",
     description: "Refreshing banana and berry smoothie.",
     ingredients: ["Banana", "Strawberries", "Milk", "Honey"],
     category: "drinks",
@@ -21,7 +21,7 @@ let recipes = [
 
     {
     title: "Grilled Chicken",
-    image: "https://cdn.discordapp.com/attachments/1053757772782633010/1419013602979086497/image.jpg?ex=68d036e6&is=68cee566&hm=9bd382c214b13eea390f5ace2b17692d3f3d947f49d8c82d1c62247879401c0a&",
+    image: "grilled chicken.jpg",
     description: "Juicy grilled chicken with herbs.",
     ingredients: ["Chicken breast", "Olive oil", "Garlic", "Rosemary"],
     category: "lunch",

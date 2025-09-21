@@ -58,7 +58,7 @@ function updateDisplay(seconds) {
 }
 
 
-const rain = new Audio("assets/sounds/calming-rain.mp3");
+const rain = new Audio("rain.mp3");
 rain.loop = true;
 
 document.getElementById("playRain").addEventListener("click", () => {
@@ -71,7 +71,7 @@ document.getElementById("stopRain").addEventListener("click", () => {
 });
 
 
-const waves = new Audio("assets/sounds/calming-waves.mp3"); 
+const waves = new Audio("waves.mp3"); 
 waves.loop = true;
 
 document.getElementById("playWaves").addEventListener("click", () => {

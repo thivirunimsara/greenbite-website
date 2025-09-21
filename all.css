@@ -302,7 +302,7 @@ footer {
   font-weight: bold;
 }
 
-/* Workout Page */
+
 .workout-box {
   max-width: 400px;
   margin: 20px auto;
@@ -348,7 +348,7 @@ footer {
   margin: 5px 0;
 }
 
-/* Highlight current exercise */
+
 .workout-item.active {
   background: #c8f7c5;
   border: 1px solid #4caf50;
@@ -379,7 +379,7 @@ footer {
   font-size: 16px;
 }
 
-/* Mindfulness Page */
+
 .mind-box {
   max-width: 500px;
   margin: 20px auto;
@@ -448,7 +448,7 @@ footer {
   color: white;
 }
 
-/* Contact Page */
+
 .contact-box {
   max-width: 500px;
   margin: 20px auto;
@@ -510,7 +510,7 @@ footer {
   flex: 1;
 }
 
-/* Base styles */
+
 .navbar {
   position: relative;
   display: flex;
@@ -519,13 +519,13 @@ footer {
   padding: 10px 20px;
 }
 
-/* nav-links hidden by default */
+
 .nav-links {
   display: none;
   flex-direction: column;
   background: #2e7d32;
   position: absolute;
-  top: 60px; /* below navbar */
+  top: 60px; 
   right: 0;
   width: 200px;
   padding: 10px;
@@ -540,12 +540,12 @@ footer {
   display: block;
 }
 
-/* Show menu when active */
+
 .nav-links.active {
   display: flex;
 }
 
-/* Hamburger always visible by default */
+
 .hamburger {
   display: block;
   font-size: 28px;
@@ -553,7 +553,7 @@ footer {
   user-select: none;
 }
 
-/* Tablet & Mobile (≤911px) */
+
 @media (max-width: 991px) {
   .recipe-grid {
     grid-template-columns: 1fr;
@@ -567,13 +567,13 @@ footer {
   }
 }
 
-/* Desktop (≥912px) */
+
 @media (min-width: 992px) {
   .hamburger {
-    display: none; /* hide hamburger */
+    display: none; 
   }
   .nav-links {
-    display: flex; /* always visible */
+    display: flex;
     flex-direction: row;
     position: static;
     background: none;
@@ -582,6 +582,6 @@ footer {
   }
   .nav-links a {
     padding: 0 15px;
-    color: black; /* optional */
+    color: black; 
   }
 }

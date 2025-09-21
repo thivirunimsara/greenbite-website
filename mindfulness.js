@@ -84,7 +84,7 @@ document.getElementById("stopWaves").addEventListener("click", () => {
 });
 
 
-// Completed Sessions with localStorage
+
 const sessionList = document.getElementById("sessionList");
 
 function saveSession(duration) {

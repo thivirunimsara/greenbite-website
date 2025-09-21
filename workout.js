@@ -28,9 +28,9 @@ let queue = [];
 let idx = 0;
 let timerId = null;
 
-/* Pick unique exercises, no duplicates */
+
 function uniquePick(arr, n) {
-  const a = [...new Set(arr)]; // remove duplicates
+  const a = [...new Set(arr)]; 
   for (let i = a.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
     [a[i], a[j]] = [a[j], a[i]];
@@ -42,11 +42,11 @@ function generateWorkout() {
   const body = bodySel.value;
   const equip = equipSel.value;
 
-  // get 3 exercises
+ 
   queue = uniquePick(pools[body][equip], 3);
   idx = 0;
 
-  // render workout list
+  
   resultBox.innerHTML = "";
   queue.forEach((ex, i) => {
     const div = document.createElement("div");
@@ -75,7 +75,7 @@ function startTimer() {
     return;
   }
 
-  let duration = 20; // seconds per exercise
+  let duration = 20; 
   const total = duration;
 
   setActive(idx);

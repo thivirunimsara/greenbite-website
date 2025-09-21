@@ -1,4 +1,4 @@
-// Contact Form with localStorage
+
 const form = document.getElementById("contactForm");
 const confirmation = document.getElementById("confirmation");
 
@@ -15,7 +15,7 @@ form.addEventListener("submit", (e) => {
     return;
   }
 
-  // Save feedback to localStorage
+ 
   let feedback = JSON.parse(localStorage.getItem("feedback")) || [];
   feedback.push({ name, email, message, date: new Date().toLocaleString() });
   localStorage.setItem("feedback", JSON.stringify(feedback));
@@ -26,7 +26,7 @@ form.addEventListener("submit", (e) => {
   form.reset();
 });
 
-// FAQ Accordion
+
 const accordions = document.querySelectorAll(".accordion-btn");
 
 accordions.forEach(btn => {

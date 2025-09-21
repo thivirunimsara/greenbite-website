@@ -1,4 +1,4 @@
-// Recipe data
+
 let recipes = [
   {
     title: "Veggie Salad",
@@ -30,7 +30,7 @@ let recipes = [
   }
 ];
 
-// Display recipes
+
 function displayRecipes(list) {
   let container = document.getElementById("recipe-list");
   container.innerHTML = "";
@@ -56,19 +56,19 @@ function filterByCategory(category) {
 }
 
 
-// Search recipes
+
 document.getElementById("searchInput").addEventListener("input", e => {
   let value = e.target.value.toLowerCase();
   let filtered = recipes.filter(r => r.title.toLowerCase().includes(value));
   displayRecipes(filtered);
 });
 
-// Modal
+
 function openRecipe(recipe) {
   document.getElementById("recipeTitle").innerText = recipe.title;
   document.getElementById("recipeImage").src = recipe.image;
 
-  // Ingredients
+ 
   let ingList = document.getElementById("ingredientsList");
   ingList.innerHTML = "";
   recipe.ingredients.forEach(i => {
@@ -77,7 +77,7 @@ function openRecipe(recipe) {
     ingList.appendChild(li);
   });
 
-  // Steps
+ 
   let stepsList = document.getElementById("stepsList");
   stepsList.innerHTML = "";
   recipe.steps.forEach(s => {
@@ -86,7 +86,7 @@ function openRecipe(recipe) {
     stepsList.appendChild(li);
   });
 
-  // Nutrition
+ 
   let table = document.getElementById("nutritionTable");
   table.innerHTML = "";
   for (let [key, val] of Object.entries(recipe.nutrition)) {
@@ -102,5 +102,5 @@ document.getElementById("closeModal").onclick = function() {
   document.getElementById("recipeModal").style.display = "none";
 };
 
-// Init
+
 displayRecipes(recipes);

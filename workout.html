@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Workout Generator</title>
+  <link rel="stylesheet" href="all.css">
+  
+   <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">GreenBite</div>
+     <div class="hamburger" id="hamburger">
+    ☰
+  </div>
+    <div id="navLinks" class="nav-links">
+      <a href="home.html">Home</a>
+      <a href="recipe.html">Recipes</a>
+      <a href="calculator.html">Calculator</a>
+      <a href="" class="active">Workout</a>
+      <a href="mindfulness.html">Mindfulness</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <header>
+    <h1>Workout Generator</h1>
+    <p>Select options and generate your workout.</p>
+  </header>
+
+  <section class="workout-box">
+    <label for="body">Body Part:</label>
+    <select id="body">
+      <option value="arms">Arms</option>
+      <option value="legs">Legs</option>
+      <option value="full">Full Body</option>
+    </select>
+
+
+    <label for="equip">Equipment:</label>
+<select id="equip">
+  <option value="none">No Equipment</option>
+  <option value="dumbbells">Dumbbells</option>
+  <option value="machines">Machines</option>
+</select>
+
+
+    <button id="genBtn">Generate Workout</button>
+
+    <div id="workoutResult"></div>
+    <div id="timerBox" class="hidden">
+      <p id="exerciseName"></p>
+      <div class="timer">
+        <div id="timerBar" class="bar"></div>
+      </div>
+      <span id="timerCount"></span>
+    </div>
+  </section>
+
+   <footer>
+      <p>© 2025 GreenBite | Wellness Website</p>
+      <form id="newsletter">
+        <input
+          type="email"
+          id="nl-email"
+          placeholder="Enter your email"
+          required
+        />
+        <button type="submit">Subscribe</button>
+        <p id="nl-msg"></p>
+      </form>
+      <div class="socials">
+        <a href="https://instagram.com" target="_blank"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a href="https://facebook.com" target="_blank"
+          ><i class="fab fa-facebook"></i
+        ></a>
+      </div>
+    </footer>
+
+  <script src="workout.js"></script>
+  <script src="menu.js"></script>
+</body>
+</html>

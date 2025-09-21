@@ -1,0 +1,587 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  text-align: center;
+  background: url("https://cdn.discordapp.com/attachments/1053757772782633010/1418951119870103582/image.jpg?ex=68d0a575&is=68cf53f5&hm=64bab6cd762bcba1c753a8829cbb170b2940e5d0b33acbca785525e392030429&")
+    no-repeat center center fixed;
+  background-size: cover;
+  color: #333;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #4caf50;
+  padding: 12px 20px;
+}
+.logo {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+.nav-links {
+  display: flex;
+  gap: 15px;
+}
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+}
+.nav-links a:hover {
+  background-color: #339d38;
+  border-radius: 5px;
+}
+.nav-links a.active {
+  background-color: #44a549;
+  border-radius: 5px;
+}
+
+header {
+  background-color: rgba(76, 175, 80, 0.85);
+  color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.daily-tip-box {
+  max-width: 500px;
+  margin: 20px auto;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.daily-tip-box h3 {
+  margin-bottom: 10px;
+  color: #064d1a;
+}
+
+.daily-tip-box p {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.daily-image img {
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  margin-bottom: 20px;
+}
+
+footer form {
+  margin-top: 10px;
+}
+
+footer input[type="email"] {
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  width: 200px;
+}
+
+footer button {
+  padding: 8px 12px;
+  margin-left: 5px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+footer button:hover {
+  background-color: #45a049;
+}
+
+#nl-msg {
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+.socials {
+  margin-top: 15px;
+}
+
+.socials a {
+  color: white;
+  font-size: 24px;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.socials a:hover {
+  color: #ffcc00;
+}
+
+footer {
+  background-color: #064d1a;
+  height: 100%;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.recipe-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.recipe-card {
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  cursor: pointer;
+}
+
+.recipe-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.modal-content {
+  background: #fff;
+  margin: 5% auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 600px;
+}
+
+.modal-content img {
+  max-width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+.search-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin: 20px;
+}
+
+.categories {
+  display: flex;
+  gap: 10px;
+}
+
+.categories button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+}
+
+.categories button:hover {
+  background-color: #45a049;
+}
+
+.close {
+  float: right;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.calculator-box {
+  max-width: 500px;
+  margin: 20px auto;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.calculator-box form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.calculator-box label {
+  font-weight: bold;
+  color: #064d1a;
+}
+
+.calculator-box input,
+.calculator-box select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.calc-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.calc-buttons button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.calc-buttons button[type="submit"] {
+  background: #4caf50;
+  color: white;
+}
+
+.calc-buttons button[type="reset"] {
+  background: #ddd;
+}
+
+#result {
+  margin-top: 20px;
+  padding: 15px;
+  background: #f0fff0;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+#result h2 {
+  color: #064d1a;
+  margin-bottom: 10px;
+}
+
+#result ul {
+  list-style: none;
+  padding: 0;
+}
+
+#result li {
+  background: #e8f5e9;
+  margin: 5px 0;
+  padding: 8px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+/* Workout Page */
+.workout-box {
+  max-width: 400px;
+  margin: 20px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.workout-box label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.workout-box select,
+.workout-box button {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+}
+
+.workout-box button {
+  background: #28a745;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#workoutResult {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.workout-item {
+  background: #f0fff0;
+  padding: 8px;
+  border-radius: 6px;
+  margin: 5px 0;
+}
+
+/* Highlight current exercise */
+.workout-item.active {
+  background: #c8f7c5;
+  border: 1px solid #4caf50;
+  font-weight: bold;
+}
+
+.timer {
+  background: #e9ecef;
+  height: 16px;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 15px 0;
+}
+
+.bar {
+  height: 100%;
+  width: 100%;
+  background: #28a745;
+  transition: width 1s linear;
+}
+
+.hidden {
+  display: none;
+}
+
+#timerCount {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* Mindfulness Page */
+.mind-box {
+  max-width: 500px;
+  margin: 20px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.mind-box button {
+  margin: 5px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#breathBtn,
+#playRain {
+  background: #28a745;
+  color: white;
+}
+
+#stopBreathBtn,
+#stopRain {
+  background: #dc3545;
+  color: white;
+}
+
+.breath-bar-container {
+  width: 100%;
+  height: 200px;
+  background: #e9ecef;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 20px 0;
+  position: relative;
+}
+
+#breathBar {
+  width: 100%;
+  height: 0%;
+  background: #28a745;
+  position: absolute;
+  bottom: 0;
+  transition: height 4s ease-in-out;
+}
+
+#timerDisplay {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+#playRain,
+#playWaves {
+  background: #28a745;
+  color: white;
+}
+
+#stopRain,
+#stopWaves {
+  background: #dc3545;
+  color: white;
+}
+
+/* Contact Page */
+.contact-box {
+  max-width: 500px;
+  margin: 20px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.contact-box input,
+.contact-box textarea {
+  width: 96%;
+  margin: 8px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.contact-box button {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 6px;
+}
+
+.accordion-btn {
+  background: #f1f1f1;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  text-align: left;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 6px;
+  margin-top: 5px;
+}
+
+.accordion-content {
+  display: none;
+  padding: 10px;
+  background: #fafafa;
+  border-radius: 6px;
+}
+
+.contact-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1000px;
+  margin: 20px auto;
+  gap: 20px;
+}
+
+.contact-row .contact-box {
+  flex: 1;
+}
+
+/* Base styles */
+.navbar {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+/* nav-links hidden by default */
+.nav-links {
+  display: none;
+  flex-direction: column;
+  background: #2e7d32;
+  position: absolute;
+  top: 60px; /* below navbar */
+  right: 0;
+  width: 200px;
+  padding: 10px;
+  border-radius: 0 0 8px 8px;
+}
+
+.nav-links a {
+  padding: 10px;
+  color: white;
+  text-align: left;
+  text-decoration: none;
+  display: block;
+}
+
+/* Show menu when active */
+.nav-links.active {
+  display: flex;
+}
+
+/* Hamburger always visible by default */
+.hamburger {
+  display: block;
+  font-size: 28px;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Tablet & Mobile (≤911px) */
+@media (max-width: 991px) {
+  .recipe-grid {
+    grid-template-columns: 1fr;
+  }
+  .contact-row {
+    flex-direction: column;
+  }
+  h1,
+  h2 {
+    font-size: 20px;
+  }
+}
+
+/* Desktop (≥912px) */
+@media (min-width: 992px) {
+  .hamburger {
+    display: none; /* hide hamburger */
+  }
+  .nav-links {
+    display: flex; /* always visible */
+    flex-direction: row;
+    position: static;
+    background: none;
+    width: auto;
+    padding: 0;
+  }
+  .nav-links a {
+    padding: 0 15px;
+    color: black; /* optional */
+  }
+}

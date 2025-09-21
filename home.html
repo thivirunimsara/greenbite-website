@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>GreenBite</title>
+    <link rel="stylesheet" href="all.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">GreenBite</div>
+      <div class="hamburger" id="hamburger">☰</div>
+      <div id="navLinks" class="nav-links">
+        <a href=""  class="active">Home</a> 
+        <a href="recipe.html">Recipes</a>
+        <a href="calculator.html">Calculator</a>
+        <a href="workout.html">Workout</a>
+        <a href="mindfulness.html">Mindfulness</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+
+    <header>
+      <h1>Welcome to GreenBite</h1>
+      <p>Healthy habits made simple.</p>
+    </header>
+
+    <section class="daily-tip-box">
+      <h3>Tip of the Day</h3>
+      <p id="daily-tip">Loading daily tip...</p>
+    </section>
+
+    <section class="daily-image">
+      <img id="health-image" src="" alt="Daily Health Image" />
+    </section>
+
+    <footer>
+      <p>© 2025 GreenBite | Wellness Website</p>
+      <form id="newsletter">
+        <input
+          type="email"
+          id="nl-email"
+          placeholder="Enter your email"
+          required
+        />
+        <button type="submit">Subscribe</button>
+        <p id="nl-msg"></p>
+      </form>
+      <div class="socials">
+        <a href="https://instagram.com" target="_blank"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a href="https://facebook.com" target="_blank"
+          ><i class="fab fa-facebook"></i
+        ></a>
+      </div>
+    </footer>
+
+    <script src="home.js"></script>
+    <script src="menu.js"></script>
+  </body>
+</html>

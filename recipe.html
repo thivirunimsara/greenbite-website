@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>GreenBite Recipes</title>
+    <link rel="stylesheet" href="all.css" />
+    
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">GreenBite</div>
+       <div class="hamburger" id="hamburger">
+    ☰
+  </div>
+      <div id="navLinks" class="nav-links">
+        <a href="./home.html">Home</a>
+        <a href="" class="active">Recipes</a>
+        <a href="calculator.html">Calculator</a>
+        <a href="workout.html">Workout</a>
+        <a href="mindfulness.html">Mindfulness</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+
+    <header>
+      <h1>Healthy Recipes</h1>
+      <p>Explore simple and delicious meals for a healthy lifestyle.</p>
+    </header>
+
+    <section class="search-bar">
+      <input type="text" id="searchInput" placeholder="Search recipes..." />
+      <div class="categories">
+        <button onclick="filterByCategory('all')">All</button>
+        <button onclick="filterByCategory('breakfast')">Breakfast</button>
+        <button onclick="filterByCategory('lunch')">Lunch</button>
+        <button onclick="filterByCategory('drinks')">Drinks</button>
+      </div>
+    </section>
+
+    <section id="recipe-list" class="recipe-grid"></section>
+
+    <div id="recipeModal" class="modal">
+      <div class="modal-content">
+        <span id="closeModal" class="close">&times;</span>
+        <h2 id="recipeTitle"></h2>
+        <img id="recipeImage" alt="" />
+        <h3>Ingredients</h3>
+        <ul id="ingredientsList"></ul>
+        <h3>Steps</h3>
+        <ol id="stepsList"></ol>
+        <h3>Nutrition</h3>
+        <table id="nutritionTable"></table>
+      </div>
+    </div>
+
+    <footer>
+      <p>© 2025 GreenBite | Wellness Website</p>
+      <form id="newsletter">
+        <input
+          type="email"
+          id="nl-email"
+          placeholder="Enter your email"
+          required
+        />
+        <button type="submit">Subscribe</button>
+        <p id="nl-msg"></p>
+      </form>
+      <div class="socials">
+        <a href="https://instagram.com" target="_blank"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a href="https://facebook.com" target="_blank"
+          ><i class="fab fa-facebook"></i
+        ></a>
+      </div>
+    </footer>
+    <script src="recipe.js"></script>
+    <script src="menu.js"></script>
+  </body>
+</html>

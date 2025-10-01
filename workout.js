@@ -29,21 +29,14 @@ let idx = 0;
 let timerId = null;
 
 
-function uniquePick(arr, n) {
-  const a = [...new Set(arr)]; 
-  for (let i = a.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [a[i], a[j]] = [a[j], a[i]];
-  }
-  return a.slice(0, Math.min(n, a.length));
-}
+
 
 function generateWorkout() {
   const body = bodySel.value;
   const equip = equipSel.value;
 
  
-  queue = uniquePick(pools[body][equip], 3);
+  queue = pools[body][equip];
   idx = 0;
 
   
